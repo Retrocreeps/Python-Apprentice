@@ -25,4 +25,9 @@ tina.left(90)
 tina.forward(150)
 tina.left(90)
 
-turtle.exitonclick()                    # Close the window when we click on it
+turtle.exitonclick()  
+
+for i in range(4)
+    print ('Loop Iteration', i)     
+    
+tina.exitonclick             # Close the window when we click on it
