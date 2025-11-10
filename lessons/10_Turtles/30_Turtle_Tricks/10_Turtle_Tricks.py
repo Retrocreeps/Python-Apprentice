@@ -16,6 +16,9 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 # tina.pencolor()
 
 ... 
+
+
+
 import turtle 
 turtle.setup(600,600,0,0)
 
@@ -24,12 +27,39 @@ tina = turtle.Turtle()
 tina.shape('turtle')
 tina.speed(2)
 tina.fillcolor('red')
-tina.pencolor('blue')
+tina.pencolor('red')
+
+tina.turtlesize(stretch_wid=10, stretch_len=10, outline=4
+for i in range(18):
+    tina.speed(1000)
+    tina.pencolor('red')
+    tina.forward(10)
+    tina.pencolor('orange')
+    tina.forward(10)
+    tina.pencolor('yellow')
+    tina.forward(10)
+    tina.pencolor('green')
+    tina.forward(10)
+    tina.pencolor('lime')
+    tina.forward(10)
+    tina.pencolor('blue')
+    tina.forward(10)
+    tina.pencolor('aqua')
+    tina.forward(10)
+    tina.pencolor('indigo')
+    tina.forward(10)
+    tina.pencolor('violet')
+    tina.forward(10)
+    tina.pencolor('pink')
+    tina.forward(10)
+    tina.left(100)
 
 
-for i in range(2500):
-    tina.forward(150)
-    tina.left(72)
+
+
+
+
+   
 
 
 

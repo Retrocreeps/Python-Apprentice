@@ -17,4 +17,9 @@ screen.bgcolor('white')
 
 t = turtle.Turtle()
 
-... # Your Code Here
+def set_background_image(window, )
+   from pathlib import __path__
+   from PIL import Image
+
+   image_dir=path(__file__).parent / "images"
+   image_path=str()
