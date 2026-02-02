@@ -18,7 +18,7 @@ t1.shape("turtle")
 
 t2 = turtle.Turtle()
 t2.penup
-t2.shape("arrow")
+t2.shape("turtle")
 
 for i in range(-200, 200):
     t1.goto(i,i)
@@ -31,31 +31,70 @@ screen = turtle.Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("white")
 
-t = turtle.Turtle()
-t.penup()
-t.shape("turtle")
+t3 = turtle.Turtle()
+t3.penup()
+t3.shape("turtle")
 
 def screen_clicked(x, y): 
 
-print('You pressed: x=' + str(x) + ', y=' + str(y)) 
-t.goto(x, y)
+  print('You pressed: x=' + str(x) + ', y=' + str(y))
+  t.goto(x, y)
 
 import turtle as turtle 
 turtle.setup(width=600, height=600)
-t = turtle.Turtle()
-t.shape("turtle")
-t.turtlesize(stretch_wid=10, stetch_len=10, outline=4)
+t4 = turtle.Turtle()
+t4.shape("turtle")
+#t.turtlesize(stretch_wid=10, stetch_len=10, outline=4)
 
 def turtle_clicked(t, x, y):
 
-print('turtle clicked!')
-
-for i in range(0,360, 20):
-    t.tilt(20)
-
-t.onlick(lambda x, y, t=t: turtle_clicked(t, x, y))
+  print('turtle clicked!')
 
 
+  for i in range(0,360, 20):
+    t.pencolor("red")
+    t.left(20)
+    t.forward(20)
+    t.pencolor("orange")
+    t.left(20)
+    t.forward(20)
+    t.pencolor("yellow")
+    t.left(20)
+    t.forward(20)
+    t.pencolor("green")
+    t.left(20)
+    t.forward(20)
+    t.pencolor("lime")
+    t.left(20)
+    t.forward(20)
+    t.pencolor("cyan")
+    t.left(20)
+    t.forward(20)
+    t.pencolor("blue")
+    t.left(20)
+    t.forward(20)
+    t.pencolor("purple")
+    t.left(20)
+    t.forward(20)
+    t.pencolor("magenta")
+    t.left(20)
+    t.forward(20)
+    t.pencolor("pink")
+    t.left(20)
+    t.forward(20)
+    
 
+
+t4.onclick(lambda x, y, t=t4: turtle_clicked(t, x, y))
+t3.onclick(lambda x, y, t=t3: turtle_clicked(t, x, y))
+t2.onclick(lambda x, y, t=t2: turtle_clicked(t, x, y))
+t1.onclick(lambda x, y, t=t1: turtle_clicked(t, x, y))
+
+
+
+
+
+turtle.done()
+t3.goto(200, 200)
 
 
