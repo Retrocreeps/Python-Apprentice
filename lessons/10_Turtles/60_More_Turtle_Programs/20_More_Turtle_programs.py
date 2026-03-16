@@ -13,40 +13,29 @@ screen = turtle.Screen()
 screen.setup(width=600, height=600)
 
 t1 = turtle.Turtle()
-t1.penup()
+t1.pendown()
 t1.shape("turtle")
 
 t2 = turtle.Turtle()
-t2.penup
+t2.pendown()
 t2.shape("turtle")
 
-for i in range(-200, 200):
-    t1.goto(i,i)
-    t2.goto(i,-i)
+#for i in range(-200, 200):
+    #t2.goto(i,-i)
 
 
-import turtle as turtle
 
-screen = turtle.Screen()
-screen.setup(width=600, height=600)
-screen.bgcolor("white")
-
-t3 = turtle.Turtle()
-t3.penup()
-t3.shape("turtle")
 
 def screen_clicked(x, y): 
 
   print('You pressed: x=' + str(x) + ', y=' + str(y))
-  t.goto(x, y)
+  t1.goto(x, y)
 
-import turtle as turtle 
-turtle.setup(width=600, height=600)
-t4 = turtle.Turtle()
-t4.shape("turtle")
-#t.turtlesize(stretch_wid=10, stetch_len=10, outline=4)
+screen.onclick(screen_clicked)
 
-def turtle_clicked(t, x, y):
+
+
+def turtle_clicked(t, x, y,):
 
   print('turtle clicked!')
 
@@ -85,8 +74,8 @@ def turtle_clicked(t, x, y):
     
 
 
-t4.onclick(lambda x, y, t=t4: turtle_clicked(t, x, y))
-t3.onclick(lambda x, y, t=t3: turtle_clicked(t, x, y))
+
+
 t2.onclick(lambda x, y, t=t2: turtle_clicked(t, x, y))
 t1.onclick(lambda x, y, t=t1: turtle_clicked(t, x, y))
 
@@ -94,7 +83,13 @@ t1.onclick(lambda x, y, t=t1: turtle_clicked(t, x, y))
 
 
 
+
+
+####t4 = turtle.Turtle()
+#t4.penup()
+#t4.shape("turtle")
+
 turtle.done()
-t3.goto(200, 200)
+
 
 
