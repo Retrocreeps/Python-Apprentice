@@ -15,11 +15,44 @@ screen = turtle.Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor('white')
 
-t = turtle.Turtle()
 
-def set_background_image(window, )
-   from pathlib import __path__
+
+def set_turtle_image(t, image_name):
+   from pathlib import Path
    from PIL import Image
+   
+   image_dir=Path(__file__).parent.parent / "images"
+   image_path = str(image_dir / image_name)
+   screen = t.getscreen()
+   screen.addshape(image_path)
+   t.shape(image_path)
 
-   image_dir=path(__file__).parent / "images"
-   image_path=str()
+
+screen=turtle.Screen()
+screen.setup(width=600, height=600)
+t = turtle.Turtle()
+set_turtle_image(t, "leaguebot_bolt.gif")
+
+t.pencolor('blue')
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(60)
+t.forward(100)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+turtle.exitonclick()
