@@ -33,26 +33,17 @@ screen.setup(width=600, height=600)
 t = turtle.Turtle()
 set_turtle_image(t, "leaguebot_bolt.gif")
 
+t.penup()
+t.forward(100)
+t.pendown()
 t.pencolor('blue')
-t.forward(100)
 t.left(90)
+for i in range(6):
+   t.forward(100)
+   t.left(60)
+t.forward(50)
+t.left(90)
+t.penup()
 t.forward(100)
-t.left(60)
-t.forward(100)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 turtle.exitonclick()
