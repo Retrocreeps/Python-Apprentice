@@ -31,9 +31,9 @@ turtle.setup(600,600,0,0)
 
 tina = turtle.Turtle()
 tina.shape('turtle')
-tina.speed(3)
+tina.speed(1000)
 
-for i in range(40): 
+for i in range(1000): 
     tina.pencolor("red")
     tina.forward(30)
     tina.pencolor ("orange")
